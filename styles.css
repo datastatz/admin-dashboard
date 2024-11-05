@@ -1,0 +1,161 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* This ensures the page fills the viewport height */
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('Fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns:  0.33fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+}
+
+.sidebar {
+    background-color: #bfdbfe;
+    grid-column: 1 / 1;
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.header{
+    background-color: yellow;
+    grid-column: 2 / 4;
+    grid-row: 1 ;
+}
+
+.main-content {
+    background-color: grey;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+}
+
+
+li {
+    margin-top: 0px;
+
+}
+
+.sidebar-style {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    margin-top: 15px;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.sidebar-style li {
+    display: flex;
+    align-items: center; /* Vertically centers icon and text */
+    margin-bottom: 15px; /* Space between items */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sidebar-style li img {
+
+    margin-right: 30px; /* Space between icon and text */
+}
+
+
+img {
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.spacer {
+    margin-top: 100px
+}
+
+li:hover
+{
+    cursor: pointer; /* Changes the cursor to a hand icon */
+}
+
+
+.top-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Smaller gap between the logo and text */
+    margin-bottom: 30px; /* Adjust to match spacing with other items */
+    margin-left: 20px; /* Ensures alignment with sidebar items */
+}
+
+.dashboard {
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-header{
+    display: flex;
+    gap:20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: white;
+}
+
+.upper-header > * {
+   
+    margin-top: 30px;
+    
+}
+
+
+
+.search-box {
+    border-radius: 10px;
+    border: solid;
+    border-width: 3px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Creates a shadow */
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 20px;
+    margin-top: 37px;
+    width: 510px;
+    height: 40px;
+}
+
+.bell-icon {
+    margin-left: 700px;
+}
+
+.header-name {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+  
+}
+
+.lower-header {
+    background-color: white;
+    flex-direction: row;
+    flex:1;
+}
+
+.header > div :not(input):hover {
+    cursor: pointer; /* Changes the cursor to a hand icon */
+}
